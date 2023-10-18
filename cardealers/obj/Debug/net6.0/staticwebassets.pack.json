@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\cardealers.bundle.scp.css",
-      "PackagePath": "staticwebassets\\cardealers.bundle.scp.css"
+      "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\content\\site.css",
+      "PackagePath": "staticwebassets\\content\\site.css"
     },
     {
       "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\css\\site.css",
@@ -11,6 +11,22 @@
     {
       "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\images\\Audi-S5.jpg",
+      "PackagePath": "staticwebassets\\images\\Audi-S5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\images\\BMW-X4.jpg",
+      "PackagePath": "staticwebassets\\images\\BMW-X4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\images\\ford-mustang.jpg",
+      "PackagePath": "staticwebassets\\images\\ford-mustang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\images\\pattern.png",
+      "PackagePath": "staticwebassets\\images\\pattern.png"
     },
     {
       "Id": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\js\\site.js",
