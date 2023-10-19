@@ -2,16 +2,10 @@ using cardealers.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-public IConfiguration Configuration;
-public Startup(IConfiguration configuration)
-{
-    Configuration = configuration;
-}
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
+builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();

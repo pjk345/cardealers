@@ -14,17 +14,17 @@ namespace cardealers.Controllers
         }
         public IActionResult Index()
         {
-            
+
             var cars = _carRepository.DownloadAllCars().OrderBy(s => s.Brand);
 
-            var HomeVM = new HomeVM()
+            var carsModel = new HomeVM()
             {
                 Title = "View Cars",
                 Cars = cars.ToList()
 
             };
 
-            return View(HomeVM);
+            return View(carsModel);
         }
     }
 }
