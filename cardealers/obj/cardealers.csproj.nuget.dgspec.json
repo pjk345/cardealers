@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\cardealers.csproj": {}
+    "C:\\Users\\user\\Desktop\\Projekty KajWare\\cardealers\\cardealers\\cardealers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\cardealers.csproj": {
+    "C:\\Users\\user\\Desktop\\Projekty KajWare\\cardealers\\cardealers\\cardealers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\cardealers.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Projekty KajWare\\cardealers\\cardealers\\cardealers.csproj",
         "projectName": "cardealers",
-        "projectPath": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\cardealers.csproj",
-        "packagesPath": "C:\\Users\\armando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Projekty KajWare\\cardealers\\cardealers\\cardealers.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Projekty KajWare\\cardealers\\cardealers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\armando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,6 +44,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,12 +10,13 @@
         }
         public IEnumerable<Car> DownloadAllCars()
         {
-           return _appDbContext.Cars;   
+            return _appDbContext.Cars;
         }
 
         public Car DownloadCarWithId(int carId)
         {
-            return _appDbContext.Cars.FirstOrDefault(s  => s.Id == carId);
+            var cars = _appDbContext.Cars.FirstOrDefault(s => s.Id == carId);
+            return cars;
         }
     }
 }
