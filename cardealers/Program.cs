@@ -9,24 +9,20 @@ builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builde
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();
+builder.Services.AddTransient<DbInitialiser>();
+
 
 var app = builder.Build();
 
-var host = CreateWebHostBuilder(args).Build();
 
-using (var scope = hsot.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    try
-    {
-        var context = services.GetRequiredService<AppContext>();
-        context.Database.Migrate();
-        DbInitializer.Seed(context);
-    }
-    catch (Exception ex) { }
-}
+using var scope = app.Services.CreateScope();
 
-host.Run();
+var services = scope.ServiceProvider;
+
+var initialiser = services.GetRequiredService<DbInitialiser>();
+
+initialiser.Run();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
