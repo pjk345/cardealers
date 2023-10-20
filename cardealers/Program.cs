@@ -12,6 +12,22 @@ builder.Services.AddTransient<ICarRepository, CarRepository>();
 
 var app = builder.Build();
 
+var host = CreateWebHostBuilder(args).Build();
+
+using (var scope = hsot.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<AppContext>();
+        context.Database.Migrate();
+        DbInitializer.Seed(context);
+    }
+    catch (Exception ex) { }
+}
+
+host.Run();
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
