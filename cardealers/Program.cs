@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();
 builder.Services.AddTransient<DbInitialiser>();
-
+ 
 
 var app = builder.Build();
 
