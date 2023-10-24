@@ -15,14 +15,6 @@ builder.Services.AddTransient<DbInitialiser>();
 var app = builder.Build();
 
 
-using var scope = app.Services.CreateScope();
-
-var services = scope.ServiceProvider;
-
-var initialiser = services.GetRequiredService<DbInitialiser>();
-
-initialiser.Run();
-
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
