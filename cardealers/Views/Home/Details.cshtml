@@ -1,0 +1,16 @@
+﻿@model cardealers.Models.Car
+
+<h2>@Model.Brand - @Model.Model</h2>
+
+<div class="thumbnail">
+    <img alt="@Model.Brand" src="@Model.PhotoUrl" />
+    <div class=" caption-full">
+        <h3 class="pull-right">@Model.Price</h3>
+        <h4>@Model.ProductionYear</h4>
+        <h4>@Model.Mileage</h4>
+        <h4>@Model.Capacity</h4>
+        <h4>@Model.Power</h4>
+        <p>@Model.Description</p>
+    </div>
+
+</div>
