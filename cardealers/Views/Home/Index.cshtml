@@ -5,10 +5,10 @@
 
 @foreach (var car in Model.Cars)
 {
-    <div class="col-sm-4 clo-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="@car.ThumbnailUrl" alt="">
-            <div class="caption">
+    <div class="col-sm-4 clo-lg-4 col-md-4 ">
+        <div class="card" style="width: 18rem;">
+        <img src="@car.ThumbnailUrl" class="card-img-top" alt="">
+            <div class="cardbody ">
                 <h3 class="pull-right">@car.Price.ToString("c")</h3>
                 <h3>
                    <a asp-controller="Home" asp-action="Details" asp-route-id="@car.Id"> @car.Brand </a>- @car.Model - @car.ProductionYear

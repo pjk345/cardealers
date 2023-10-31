@@ -9,6 +9,7 @@ builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builde
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();
+builder.Services.AddTransient<IOpinionRepository, OpinionRepository>();
 builder.Services.AddTransient<DbInitialiser>();
 
 
