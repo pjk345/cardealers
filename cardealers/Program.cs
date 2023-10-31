@@ -9,19 +9,12 @@ builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builde
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();
+builder.Services.AddTransient<IOpinionRepository, OpinionRepository>();
 builder.Services.AddTransient<DbInitialiser>();
  
 
 var app = builder.Build();
 
-
-using var scope = app.Services.CreateScope();
-
-var services = scope.ServiceProvider;
-
-var initialiser = services.GetRequiredService<DbInitialiser>();
-
-initialiser.Run();
 
 
 // Configure the HTTP request pipeline.
@@ -35,7 +28,10 @@ if (!app.Environment.IsDevelopment())
 app.UseDeveloperExceptionPage();
 app.UseStatusCodePages();
 app.UseStaticFiles();
-//app.UseMvcWithDefaultRoute();
+//app.UseMvc(routes =>
+//{
+//    routes.MapRoute(name: "default", template: "{controller = Home}/{action = Index}/{id?}");
+//});
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

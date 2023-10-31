@@ -26,5 +26,14 @@ namespace cardealers.Controllers
 
             return View(carsModel);
         }
+
+
+        public IActionResult Details(int id) {
+            var car = _carRepository.DownloadCarWithId(id);
+            if (car == null) 
+                return NotFound();
+
+            return View(car);   
+        }
     }
 }
