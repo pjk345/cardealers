@@ -11,8 +11,8 @@ using cardealers.Models;
 namespace cardealers.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231023113054_initial")]
-    partial class initial
+    [Migration("20231019071827_AddCars")]
+    partial class AddCars
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -168,6 +168,3 @@ C:\Users\armando\Desktop\vs cw\cardealers\cardealers\bin\Debug\net6.0\runtimes\b
 C:\Users\armando\Desktop\vs cw\cardealers\cardealers\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\armando\Desktop\vs cw\cardealers\cardealers\obj\Debug\net6.0\cardealers.csproj.AssemblyReference.cache
 C:\Users\armando\Desktop\vs cw\cardealers\cardealers\obj\Debug\net6.0\cardealers.csproj.CopyComplete
-C:\Users\armando\Desktop\vs cw\cardealers\cardealers\bin\Debug\net6.0\Microsoft.Data.Sqlite.dll
-C:\Users\armando\Desktop\vs cw\cardealers\cardealers\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\armando\Desktop\vs cw\cardealers\cardealers\bin\Debug\net6.0\SQLitePCLRaw.core.dll

@@ -11,7 +11,7 @@ builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();
 builder.Services.AddTransient<IOpinionRepository, OpinionRepository>();
 builder.Services.AddTransient<DbInitialiser>();
- 
+
 
 var app = builder.Build();
 
