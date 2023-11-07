@@ -1,4 +1,5 @@
 using cardealers.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -11,6 +12,7 @@ builder.Services.AddMvc();
 builder.Services.AddTransient<ICarRepository, CarRepository>();
 builder.Services.AddTransient<IOpinionRepository, OpinionRepository>();
 builder.Services.AddTransient<DbInitialiser>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
 
 var app = builder.Build();
@@ -28,6 +30,7 @@ if (!app.Environment.IsDevelopment())
 app.UseDeveloperExceptionPage();
 app.UseStatusCodePages();
 app.UseStaticFiles();
+app.UseAuthentication();
 //app.UseMvc(routes =>
 //{
 //    routes.MapRoute(name: "default", template: "{controller = Home}/{action = Index}/{id?}");
