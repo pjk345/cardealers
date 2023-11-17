@@ -31,5 +31,20 @@
       {
             return cars;
        }
+
+        public void AddCar(Car car)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EditCar(Car car)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteCar(Car car)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

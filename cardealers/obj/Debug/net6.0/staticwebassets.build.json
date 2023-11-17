@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yrO0lgMmOM5Sux0bgA79df4Gu2CJeC6wCJHu3JrjdCk=",
+  "Hash": "7Mo8QgtgWY5eaOYjClXmENSBjti/uvSVjs/nH5eNeSs=",
   "Source": "cardealers",
   "BasePath": "_content/cardealers",
   "Mode": "Default",
@@ -66,23 +66,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\images\\audiS5.jpg",
-      "SourceId": "cardealers",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\",
-      "BasePath": "_content/cardealers",
-      "RelativePath": "images/audiS5.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\audiS5.jpg"
     },
     {
       "Identity": "C:\\Users\\armando\\Desktop\\vs cw\\cardealers\\cardealers\\wwwroot\\images\\bmwX4.jpg",

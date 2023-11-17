@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Car>
+
+<table class="table" style="background-color:azure">
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Mileage</th>
+            <th>Capacity</th>
+            <th>Fuel</th>
+            <th>Power</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Thumbnail</th>
+            <th>
+                <a asp-action="Create" class="btn btn-danger btn-sm">Add new</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelitem => item.Brand)</td>
+                <td>@Html.DisplayFor(modelitem => item.Model)</td>
+                <td>@Html.DisplayFor(modelitem => item.ProductionYear)</td>
+                <td>@Html.DisplayFor(modelitem => item.Mileage)</td>
+                <td>@Html.DisplayFor(modelitem => item.Capacity)</td>
+                <td>@Html.DisplayFor(modelitem => item.FuelType)</td>
+                <td>@Html.DisplayFor(modelitem => item.Power)</td>
+                <td>@Html.DisplayFor(modelitem => item.Description)</td>
+                <td>@Html.DisplayFor(modelitem => item.Price)</td>
+                <td><img src="@item.ThumbnailUrl" height="100" width="100" />   </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success btn-sm" style="margin-bottom:3px">Details</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm" style="margin-bottom:3px">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-success btn-sm" style="margin-bottom:3px">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
